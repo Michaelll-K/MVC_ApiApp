@@ -5,7 +5,7 @@ using MVC_ApiApp.Tools;
 
 namespace MVC_ApiApp.Controllers
 {
-    public class CountriesController : Controller
+    public class CountryController : Controller
     {
         public ActionResult Index()
         {
@@ -18,6 +18,7 @@ namespace MVC_ApiApp.Controllers
 
             List<CountryModel> modelList = cm.GetCountries();
 
+            //Sorted list of Countries
             modelList = modelList.OrderByDescending(x => x.TotalConfirmed).Take(20).ToList();
 
             return View(modelList);

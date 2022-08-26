@@ -5,7 +5,7 @@ namespace MVC_ApiApp.Tools
 {
     public class CountryManager
     {
-
+        //Create HttpClient and set URI
         private HttpClient client;
         public CountryManager()
         {
@@ -14,6 +14,10 @@ namespace MVC_ApiApp.Tools
             client.BaseAddress = address;
         }
 
+        /// <summary>
+        /// Retrives JSON data from public API and transforms it to list
+        /// </summary>
+        /// <returns>List of CountryModel</returns>
         public List<CountryModel> GetCountries()
         {
             List<CountryModel> output;
@@ -30,7 +34,7 @@ namespace MVC_ApiApp.Tools
                 return output;
             }
             else
-                return output = new List<CountryModel>();
+                return new List<CountryModel>();
         }
     }
 }

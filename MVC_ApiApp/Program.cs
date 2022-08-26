@@ -22,6 +22,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//Changed default path to match new functionality
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Countries}/{action=Index}/{id?}");
