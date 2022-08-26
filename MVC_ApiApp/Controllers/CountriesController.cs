@@ -7,8 +7,12 @@ namespace MVC_ApiApp.Controllers
 {
     public class CountriesController : Controller
     {
-        // GET: CountriesController
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult List()
         {
             CountryManager cm = new CountryManager();
 
@@ -16,5 +20,6 @@ namespace MVC_ApiApp.Controllers
 
             return View(modelList);
         }
+
     }
 }
