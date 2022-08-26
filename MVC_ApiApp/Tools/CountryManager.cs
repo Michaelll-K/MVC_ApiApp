@@ -29,7 +29,6 @@ namespace MVC_ApiApp.Tools
                 string data = response.Content.ReadAsStringAsync().Result;
                 data = data.Substring(data.IndexOf('['));
                 data = data.Remove(data.IndexOf("]") + 1);
-                System.Diagnostics.Debug.WriteLine(data);
                 output = JsonConvert.DeserializeObject<List<CountryModel>>(data);
                 return output;
             }
