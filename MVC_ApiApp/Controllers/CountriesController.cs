@@ -18,6 +18,8 @@ namespace MVC_ApiApp.Controllers
 
             List<CountryModel> modelList = cm.GetCountries();
 
+            modelList = modelList.OrderByDescending(x => x.TotalConfirmed).Take(20).ToList();
+
             return View(modelList);
         }
 
