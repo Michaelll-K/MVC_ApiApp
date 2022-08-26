@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_ApiApp", "MVC_ApiApp\MVC_ApiApp.csproj", "{BFA5B362-6C7C-47D2-9EE3-B4B9E2C06CA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFA5B362-6C7C-47D2-9EE3-B4B9E2C06CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA5B362-6C7C-47D2-9EE3-B4B9E2C06CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA5B362-6C7C-47D2-9EE3-B4B9E2C06CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA5B362-6C7C-47D2-9EE3-B4B9E2C06CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {610C090D-C8EB-4F75-9C0B-FC3227DAACE4}
+	EndGlobalSection
+EndGlobal
